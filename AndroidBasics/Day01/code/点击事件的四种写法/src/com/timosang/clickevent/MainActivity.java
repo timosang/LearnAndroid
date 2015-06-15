@@ -21,30 +21,36 @@ public class MainActivity extends Activity implements OnClickListener{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-       //µÚÒ»ÖÖ
+       //ç¬¬ä¸€ç§
         btn_click1=(Button) findViewById(R.id.btn_clickevent1);
         btn_click1.setOnClickListener(new MyClickListener());
-       //µÚ¶şÖÖ
+       //ç¬¬äºŒç§
         btn_click2 = (Button) findViewById(R.id.btn_clickevent2);
         btn_click2.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View v) {
 				// TODO Auto-generated method stub
-			System.out.println("ÕâÊÇµÚ¶şÖÖ");	
+			System.out.println("è¿™æ˜¯ç¬¬äºŒç§");	
 			}
 		});
-        //µÚÈıÖÖ
+        //ç¬¬ä¸‰ç§
         btn_click3 = (Button) findViewById(R.id.btn_clickevent3);
-        btn_click3.setOnClickListener(this);//thisÖÁMainActivityÕâ¸öÀà
+        btn_click3.setOnClickListener(this);//thisè‡³MainActivityè¿™ä¸ªç±»
     
-        //Èı1¡¢2¡¢3
+        //ä¸‰1ã€2ã€3
         btn_click31 = (Button) findViewById(R.id.btn_clickevent31);
         btn_click32= (Button) findViewById(R.id.btn_clickevent32);
         btn_click33= (Button) findViewById(R.id.btn_clickevent33);
         btn_click31.setOnClickListener(new MyClickListener());
         btn_click32.setOnClickListener(new MyClickListener());
         btn_click33.setOnClickListener(new MyClickListener());
+//        MyClickListener   ml = new MyClickListener();
+//        //ä¸åŒçš„æŒ‰é’®ä½¿ç”¨åŒä¸€ä¸ªç›‘å¬å¯¹è±¡ä¹Ÿæ˜¯å¯ä»¥çš„
+//        btn_click31.setOnClickListener(ml);
+//        btn_click32.setOnClickListener(ml);
+//        btn_click33.setOnClickListener(ml);
+        
         
 	}
 	class MyClickListener implements OnClickListener{
@@ -73,10 +79,10 @@ public class MainActivity extends Activity implements OnClickListener{
 	@Override
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
-		System.out.println("ÕâÊÇµÚÈıÖÖ");
+		System.out.println("è¿™æ˜¯ç¬¬ä¸‰ç§");
 	}
 	
 	public void click(View v){
-		System.out.println("ÕâÊÇµÚËÄÖÖ");
+		System.out.println("è¿™æ˜¯ç¬¬å››ç§");
 	}
 }
