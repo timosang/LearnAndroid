@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <Button
+        android:id="@+id/btn_clickevent1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第一种按钮" />
+
+    <Button
+        android:id="@+id/btn_clickevent2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第二种按钮" />
+
+    <Button
+        android:id="@+id/btn_clickevent3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第三种按钮" />
+    
+        <Button
+        android:id="@+id/btn_clickevent31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第三1种按钮" />
+            <Button
+        android:id="@+id/btn_clickevent32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第三2种按钮" />
+                <Button
+        android:id="@+id/btn_clickevent33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第三3种按钮" />
+                
+
+    <Button
+        android:id="@+id/btn_clickevent4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="click"
+        android:text="第四种按钮" />
+
+</LinearLayout>
